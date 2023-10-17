@@ -109,7 +109,7 @@ const beer = [
       '濃厚でフルーティーなマスクメロンの香りで、ほんのりとフローラルな香りが漂う繊細な味わいに加えて、リンゴやマンゴーなどの様々なフルーツの軽やかな香りも味わえます。一気に飲み干せば、笑いが止まらない！',
     INprice: '¥1,200	( 500ml_Can)',
     OUTprice: '¥1,020	( 500ml_Can)',
-    soldout: 'ture',
+    soldout: true,
     series: '9.99',
   },
   {
@@ -193,7 +193,7 @@ const beer = [
       'キンモクセイ (桂花)が金萱ウーロン茶と融合し、花の香りの中にさわやかなお茶の風味が広がります。ボディを柔らかくし、幾層もの香りをもたらしてくれます。',
     INprice: '¥1,400	( 500ml_Can)',
     OUTprice: '¥1,190	( 500ml_Can)',
-    soldout: 'true',
+    soldout: true,
     series: 'others',
   },
   {
@@ -252,8 +252,9 @@ function Menu({ selectedSeries }) {
           item.series === selectedSeries ||
           item.series === 'always'
         ) {
+          const isSoldOut = item.soldout === true;
           return (
-            <div key={index} className="beer">
+            <div key={index} className={`beer ${isSoldOut ? 'sold-out' : ''}`}>
               <h3 className="beer_twname">{item.TWname}</h3>
               <h4 className="beer_jpname">{item.JPname}</h4>
               <div className="beer_info">
@@ -276,7 +277,11 @@ function Menu({ selectedSeries }) {
 }
 
 function Footer() {
-  return <div></div>;
+  return (
+    <footer>
+      <small>&copy; 2023TIAHU TOKYO CANBEER MENU.All Rights Reserved.</small>
+    </footer>
+  );
 }
 
 function App() {

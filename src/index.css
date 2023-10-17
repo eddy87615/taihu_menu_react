@@ -29,27 +29,62 @@ h4 {
   margin-top: 4px;
 }
 
+main {
+  margin-top: 250px;
+}
+
 .filter {
   display: flex;
   margin: 0 auto;
-  padding: 4px;
+  padding: 8px;
+  font-size: 16px;
   border-radius: 20px;
   border: 2px solid #b1b1b1;
 }
 
 header {
   padding-bottom: 16px;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #3b3b3b;
   background-color: #fff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .beer {
+  position: relative;
   margin: 8px;
   padding: 8px;
   /* border: 1px solid black; */
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 4px 4px 4px rgb(208, 208, 208);
+}
+.beer:first-child::after {
+  content: '定番!!!';
+  position: absolute;
+  bottom: 100px;
+  right: 40px;
+  font-size: 32px;
+  background-color: rgb(255, 80, 112);
+  border-radius: 8px;
+  padding: 8px 24px;
+}
+.beer:nth-child(2) .intro {
+  margin-top: 80px;
+}
+.beer:nth-child(2)::after {
+  content: '人気 No.1';
+  position: absolute;
+  top: 130px;
+  right: 40px;
+  font-size: 32px;
+  background-color: rgb(114, 180, 255);
+  border-radius: 8px;
+  padding: 8px 24px;
 }
 
 .beer_info {
@@ -70,4 +105,31 @@ header {
 .sort {
   font-size: 14px;
   color: #9a9a9a;
+}
+
+footer {
+  height: 50px;
+  background-color: #3b3b3b;
+  color: #fff;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.sold-out {
+  color: #e3e3e3 !important;
+}
+.sold-out img {
+  filter: grayscale();
+}
+.sold-out::after {
+  content: '';
+  background-image: url(../public/assets/img/sold-out.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100%;
+  width: 300px;
+  height: 200px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
 }
