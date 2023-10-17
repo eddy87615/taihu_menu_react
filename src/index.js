@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import logo from '../public/accets/img/LOGO+兩側臺虎精釀.svg';
 import './index.css';
 import './font.css';
 
@@ -225,9 +226,7 @@ const beer = [
 function Header({ selectedSeries, onSeriesChange }) {
   return (
     <header>
-      <h1>
-        <img src="accets/img/LOGO+兩側臺虎精釀.svg" alt="Taihu Logo" />
-      </h1>
+      <h1>{logo}</h1>
       <h2>TAIHU BREWING</h2>
       <select value={selectedSeries} onChange={onSeriesChange}>
         <option value="all">全部</option>
