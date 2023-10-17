@@ -17,3 +17,8 @@ code {
 main {
   padding: 0px 20px;
 }
+
+h2 {
+  text-align: center;
+  letter-spacing: 0.2cm;
+}

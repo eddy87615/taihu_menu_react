@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './font.css';
@@ -222,33 +222,49 @@ const beer = [
   },
 ];
 
-function Header() {
+function Header({ selectedSeries, onSeriesChange }) {
   return (
     <header>
       <h1>
         <img src="accets/img/LOGO+兩側臺虎精釀.svg" alt="Taihu Logo" />
       </h1>
       <h2>TAIHU BREWING</h2>
+      <select value={selectedSeries} onChange={onSeriesChange}>
+        <option value="all">全部</option>
+        <option value="9.99">9.99系列</option>
+        <option value="taiwan">台湾系列</option>
+        <option value="others">其他系列</option>
+      </select>
     </header>
   );
 }
 
-function Menu() {
+function Menu({ selectedSeries }) {
   return (
     <main>
-      {beer.map((item, index) => (
-        <div>
-          <h3>{item.TWname}</h3>
-          <h4>{item.JPname}</h4>
-          <img src={item.img} alt={item.JPname} />
-          <p>{item.sort}</p>
-          <p>{item.intro}</p>
-          <ul>
-            <li>店内：{item.INprice}</li>
-            <li>お持ち帰り：{item.OUTprice}</li>
-          </ul>
-        </div>
-      ))}
+      {beer.map((item, index) => {
+        if (
+          selectedSeries === 'all' ||
+          item.series === selectedSeries ||
+          item.series === 'always'
+        ) {
+          return (
+            <div key={index}>
+              <h3>{item.TWname}</h3>
+              <h4>{item.JPname}</h4>
+              <img src={item.img} alt={item.JPname} />
+              <p>{item.sort}</p>
+              <p>{item.intro}</p>
+              <ul>
+                <li>店内：{item.INprice}</li>
+                <li>お持ち帰り：{item.OUTprice}</li>
+              </ul>
+            </div>
+          );
+        } else {
+          return null;
+        }
+      })}
     </main>
   );
 }
@@ -258,10 +274,19 @@ function Footer() {
 }
 
 function App() {
+  const [selectedSeries, setSelectedSeries] = useState('all');
+
+  const handleSeriesChange = (event) => {
+    setSelectedSeries(event.target.value);
+  };
+
   return (
     <>
-      <Header />
-      <Menu />
+      <Header
+        selectedSeries={selectedSeries}
+        onSeriesChange={handleSeriesChange}
+      />
+      <Menu selectedSeries={selectedSeries} />
       <Footer />
     </>
   );
