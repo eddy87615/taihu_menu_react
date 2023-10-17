@@ -226,7 +226,7 @@ function Header({ selectedSeries, onSeriesChange }) {
   return (
     <header>
       <h1>
-        <img src="assets/img/LOGO+兩側臺虎精釀.svg" alt="taihu logo" />
+        <img src="assets/img/LOGO兩側臺虎精釀.svg" alt="taihu logo" />
       </h1>
       <h2 className="title">TAIHU BREWING</h2>
       <select
