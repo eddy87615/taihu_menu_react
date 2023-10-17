@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import logo from './LOGO+兩側臺虎精釀.svg';
 import './index.css';
 import './font.css';
 
@@ -227,7 +226,7 @@ function Header({ selectedSeries, onSeriesChange }) {
   return (
     <header>
       <h1>
-        <img src={logo} alt="taihu logo" />
+        <img src="accets/img/LOGO+兩側臺虎精釀.svg" alt="taihu logo" />
       </h1>
       <h2 className="title">TAIHU BREWING</h2>
       <select
