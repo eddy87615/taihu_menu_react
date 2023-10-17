@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import logo from '../public/accets/img/LOGO+兩側臺虎精釀.svg';
 import './index.css';
 import './font.css';
 
@@ -226,13 +225,19 @@ const beer = [
 function Header({ selectedSeries, onSeriesChange }) {
   return (
     <header>
-      <h1>{logo}</h1>
-      <h2>TAIHU BREWING</h2>
-      <select value={selectedSeries} onChange={onSeriesChange}>
+      <h1>
+        <img src="../accets/img/LOGO+兩側臺虎精釀.svg" alt="taihu logo" />
+      </h1>
+      <h2 className="title">TAIHU BREWING</h2>
+      <select
+        value={selectedSeries}
+        onChange={onSeriesChange}
+        className="filter"
+      >
         <option value="all">全部</option>
-        <option value="9.99">9.99系列</option>
-        <option value="taiwan">台湾系列</option>
-        <option value="others">其他系列</option>
+        <option value="9.99">9.99シリーズ</option>
+        <option value="taiwan">台湾シリーズ</option>
+        <option value="others">その他</option>
       </select>
     </header>
   );
@@ -248,13 +253,15 @@ function Menu({ selectedSeries }) {
           item.series === 'always'
         ) {
           return (
-            <div key={index}>
-              <h3>{item.TWname}</h3>
-              <h4>{item.JPname}</h4>
-              <img src={item.img} alt={item.JPname} />
-              <p>{item.sort}</p>
-              <p>{item.intro}</p>
-              <ul>
+            <div key={index} className="beer">
+              <h3 className="beer_twname">{item.TWname}</h3>
+              <h4 className="beer_jpname">{item.JPname}</h4>
+              <div className="beer_info">
+                <img src={item.img} alt={item.JPname} />
+                <p className="intro">{item.intro}</p>
+              </div>
+              <p className="sort">{item.sort}</p>
+              <ul className="price">
                 <li>店内：{item.INprice}</li>
                 <li>お持ち帰り：{item.OUTprice}</li>
               </ul>

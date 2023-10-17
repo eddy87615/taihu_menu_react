@@ -4,3 +4,7 @@
     url(../public/accets/font/NotoSansJP-VariableFont_wght.ttf),
     url(../public/accets/font/NotoSansJP-VariableFont_wght.woff);
 }
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
