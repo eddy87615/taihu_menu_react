@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import logo from '../public/accets/img/LOGO+兩側臺虎精釀.svg';
+import logo from '../accets/img/LOGO+兩側臺虎精釀.svg';
 import './index.css';
 import './font.css';
 
