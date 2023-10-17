@@ -62,29 +62,48 @@ header {
   border-radius: 4px;
   background-color: #fff;
   box-shadow: 4px 4px 4px rgb(208, 208, 208);
+
+  background-image: url(/public/assets/img/logoBG.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 100% 100%;
 }
 .beer:first-child::after {
   content: '定番!!!';
   position: absolute;
-  bottom: 100px;
-  right: 40px;
-  font-size: 32px;
-  background-color: rgb(255, 80, 112);
-  border-radius: 8px;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(255, 144, 164);
+  border-radius: 25px;
   padding: 8px 24px;
-}
-.beer:nth-child(2) .intro {
-  margin-top: 80px;
+  animation-name: ani01;
+  animation: 1s linear infinite ani01;
 }
 .beer:nth-child(2)::after {
   content: '人気 No.1';
   position: absolute;
-  top: 130px;
-  right: 40px;
-  font-size: 32px;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
   background-color: rgb(114, 180, 255);
-  border-radius: 8px;
+  border-radius: 25px;
   padding: 8px 24px;
+  animation-name: ani01;
+  animation: 1s linear infinite ani01;
+}
+@keyframes ani01 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .beer_info {
