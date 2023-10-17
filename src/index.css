@@ -44,7 +44,7 @@ main {
 
 header {
   padding-bottom: 16px;
-  border-bottom: 2px solid #3b3b3b;
+  border-bottom: 5px solid #3b3b3b;
   background-color: #fff;
 
   position: fixed;
@@ -119,11 +119,13 @@ header {
 
 .beer_info > img {
   height: 100%;
+  margin: 0 10px;
 }
 
 .sort {
-  font-size: 14px;
-  color: #9a9a9a;
+  font-size: 16px;
+  /* color: #9a9a9a; */
+  margin-left: 20px;
 }
 
 footer {
