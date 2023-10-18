@@ -100,18 +100,18 @@ const beer = [
     soldout: false,
     series: '9.99',
   },
-  {
-    TWname: '臺虎 哈哈哈哈哈密瓜',
-    JPname: 'ハミメロンフーチ | Taihu Hami Melon Hooch',
-    img: 'assets/img/Taihu Hami Melon Hooch.jpeg',
-    sort: 'Fruited Ale | 9.99%',
-    intro:
-      '濃厚でフルーティーなマスクメロンの香りで、ほんのりとフローラルな香りが漂う繊細な味わいに加えて、リンゴやマンゴーなどの様々なフルーツの軽やかな香りも味わえます。一気に飲み干せば、笑いが止まらない！',
-    INprice: '¥1,200	( 500ml_Can)',
-    OUTprice: '¥1,020	( 500ml_Can)',
-    soldout: true,
-    series: '9.99',
-  },
+  // {
+  //   TWname: '臺虎 哈哈哈哈哈密瓜',
+  //   JPname: 'ハミメロンフーチ | Taihu Hami Melon Hooch',
+  //   img: 'assets/img/Taihu Hami Melon Hooch.jpeg',
+  //   sort: 'Fruited Ale | 9.99%',
+  //   intro:
+  //     '濃厚でフルーティーなマスクメロンの香りで、ほんのりとフローラルな香りが漂う繊細な味わいに加えて、リンゴやマンゴーなどの様々なフルーツの軽やかな香りも味わえます。一気に飲み干せば、笑いが止まらない！',
+  //   INprice: '¥1,200	( 500ml_Can)',
+  //   OUTprice: '¥1,020	( 500ml_Can)',
+  //   soldout: true,
+  //   series: '9.99',
+  // },
   {
     TWname: '臺虎 柚光仙子',
     JPname: 'ムーンライト・ユーズ | Taihu Moonlight Yuzu',
@@ -184,18 +184,18 @@ const beer = [
     soldout: false,
     series: 'taiwan',
   },
-  {
-    TWname: '臺虎 金迷 桂花金萱茶艾爾',
-    JPname: '桂花金萱ウーロン茶エール | Taihu Osmanthus Oolong Tea Ale',
-    img: 'assets/img/Taihu Osmanthus Oolong Tea Ale.png',
-    sort: 'Tea Ale | 5.00%',
-    intro:
-      'キンモクセイ (桂花)が金萱ウーロン茶と融合し、花の香りの中にさわやかなお茶の風味が広がります。ボディを柔らかくし、幾層もの香りをもたらしてくれます。',
-    INprice: '¥1,400	( 500ml_Can)',
-    OUTprice: '¥1,190	( 500ml_Can)',
-    soldout: true,
-    series: 'others',
-  },
+  // {
+  //   TWname: '臺虎 金迷 桂花金萱茶艾爾',
+  //   JPname: '桂花金萱ウーロン茶エール | Taihu Osmanthus Oolong Tea Ale',
+  //   img: 'assets/img/Taihu Osmanthus Oolong Tea Ale.png',
+  //   sort: 'Tea Ale | 5.00%',
+  //   intro:
+  //     'キンモクセイ (桂花)が金萱ウーロン茶と融合し、花の香りの中にさわやかなお茶の風味が広がります。ボディを柔らかくし、幾層もの香りをもたらしてくれます。',
+  //   INprice: '¥1,400	( 500ml_Can)',
+  //   OUTprice: '¥1,190	( 500ml_Can)',
+  //   soldout: true,
+  //   series: 'others',
+  // },
   {
     TWname: '臺虎 特選檳啤',
     JPname: 'ビンロウ IPA | Taihu Betel Nut IPA',
@@ -206,7 +206,7 @@ const beer = [
     INprice: '¥1,200	( 330ml_Can)',
     OUTprice: '¥1,020	( 330ml_Can)',
     soldout: false,
-    series: 'others',
+    series: 'recommend',
   },
   {
     TWname: '臺虎 臺式檸檬沙瓦',
