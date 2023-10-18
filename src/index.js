@@ -14,7 +14,7 @@ const beer = [
     INprice: '¥700	( 330ml_Can)',
     OUTprice: '¥600	( 330ml_Can)	',
     soldout: false,
-    series: 'always',
+    series: 'recommend',
   },
   {
     TWname: '臺虎 精釀IPA',
@@ -26,7 +26,7 @@ const beer = [
     INprice: '¥1,400	( 500ml_Can)',
     OUTprice: '¥1,190	( 500ml_Can)',
     soldout: false,
-    series: 'always',
+    series: 'recommend',
   },
   {
     TWname: '臺虎 長島冰啤',
@@ -237,6 +237,7 @@ function Header({ selectedSeries, onSeriesChange }) {
         <option value="all">全部</option>
         <option value="9.99">9.99シリーズ</option>
         <option value="taiwan">台湾シリーズ</option>
+        <option value="recommend">おすすめ</option>
         <option value="others">その他</option>
       </select>
     </header>
@@ -249,8 +250,8 @@ function Menu({ selectedSeries }) {
       {beer.map((item, index) => {
         if (
           selectedSeries === 'all' ||
-          item.series === selectedSeries ||
-          item.series === 'always'
+          item.series === selectedSeries
+          // item.series === 'always'
         ) {
           const isSoldOut = item.soldout === true;
           return (
