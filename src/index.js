@@ -259,7 +259,7 @@ function Menu({ selectedSeries }) {
               key={index}
               className={`beer ${isSoldOut ? 'sold-out' : ''} ${
                 item.series === 'recommend' ? 'recommend' : ''
-              } ${selectedSeries === 'all' ? 'all_recommend' : ''}`}
+              } `}
             >
               <h3 className="beer_twname">{item.TWname}</h3>
               <h4 className="beer_jpname">{item.JPname}</h4>
