@@ -30,7 +30,7 @@ const beer = [
   },
   {
     TWname: '臺虎 長島冰啤',
-    JPname: 'ロングアイランドアイスビール | Taihu Long',
+    JPname: 'ロングアイランドアイスビール | Taihu Long Island Iced Beer',
     img: 'assets/img/Taihu Long Island Iced Beer.png',
     sort: 'Fruited Ale | 9.99%',
     intro:
