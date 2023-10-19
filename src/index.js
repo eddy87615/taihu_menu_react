@@ -158,7 +158,7 @@ const beer = [
     INprice: '¥1,300	( 500ml_Can)',
     OUTprice: '¥1,100	( 500ml_Can)',
     soldout: false,
-    series: 'taiwan',
+    series: ['taiwan', 'recommend'],
   },
   {
     TWname: '臺虎 檬檬冬冬',
@@ -248,19 +248,25 @@ function Menu({ selectedSeries }) {
   return (
     <main>
       {beer.map((item, index) => {
+        const seriesArray = Array.isArray(item.series)
+          ? item.series
+          : [item.series];
+
         if (
           selectedSeries === 'all' ||
-          item.series === selectedSeries
-          // item.series === 'always'
+          seriesArray.some((series) => selectedSeries.includes(series))
         ) {
           const isSoldOut = item.soldout === true;
+          const classNames = [
+            'beer',
+            isSoldOut ? 'sold-out' : '',
+            seriesArray.includes('recommend') ? 'recommend' : '',
+          ]
+            .filter(Boolean)
+            .join(' ');
+
           return (
-            <div
-              key={index}
-              className={`beer ${isSoldOut ? 'sold-out' : ''} ${
-                item.series === 'recommend' ? 'recommend' : ''
-              } `}
-            >
+            <div key={index} className={classNames}>
               <h3 className="beer_twname">{item.TWname}</h3>
               <h4 className="beer_jpname">{item.JPname}</h4>
               <div className="beer_info">
