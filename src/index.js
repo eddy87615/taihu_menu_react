@@ -14,7 +14,7 @@ const beer = [
     INprice: '¥700	( 330ml_Can)',
     OUTprice: '¥600	( 330ml_Can)	',
     soldout: false,
-    series: 'recommend',
+    series: ['recommend', 'others'],
   },
   {
     TWname: '臺虎 精釀IPA',
@@ -26,7 +26,7 @@ const beer = [
     INprice: '¥1,400	( 500ml_Can)',
     OUTprice: '¥1,190	( 500ml_Can)',
     soldout: false,
-    series: 'recommend',
+    series: ['recommend', 'others'],
   },
   {
     TWname: '臺虎 長島冰啤',
@@ -206,7 +206,7 @@ const beer = [
     INprice: '¥1,200	( 330ml_Can)',
     OUTprice: '¥1,020	( 330ml_Can)',
     soldout: false,
-    series: 'recommend',
+    series: ['recommend', 'others'],
   },
   {
     TWname: '臺虎 臺式檸檬沙瓦',
@@ -234,10 +234,10 @@ function Header({ selectedSeries, onSeriesChange }) {
         onChange={onSeriesChange}
         className="filter"
       >
-        <option value="all">全部</option>
+        <option value="recommend">おすすめ</option>
         <option value="9.99">9.99シリーズ</option>
         <option value="taiwan">台湾シリーズ</option>
-        <option value="recommend">おすすめ</option>
+        <option value="all">全部</option>
         <option value="others">その他</option>
       </select>
     </header>
@@ -297,7 +297,7 @@ function Footer() {
 }
 
 function App() {
-  const [selectedSeries, setSelectedSeries] = useState('all');
+  const [selectedSeries, setSelectedSeries] = useState('recommend');
 
   const handleSeriesChange = (event) => {
     setSelectedSeries(event.target.value);
