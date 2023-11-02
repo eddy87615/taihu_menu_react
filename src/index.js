@@ -205,7 +205,7 @@ const beer = [
       '台湾のチューインガムと言われる「檳榔」は、かつて多くの台湾人が気分を高揚させるために食したB級文化特産品でした。フルーティーなIPAをベースに、爽やかなグアバの香りを加え、檳榔の葉を浸すことで全体の風味を際立たせ、檳榔を噛まなくても台湾気分満点の檳榔ビールに仕上げました。',
     INprice: '¥1,200	( 330ml_Can)',
     OUTprice: '¥1,020	( 330ml_Can)',
-    soldout: true,
+    soldout: false,
     series: 'others',
   },
   {
@@ -217,7 +217,7 @@ const beer = [
       'レモンの華やかな香りとさわやかさでさっぱりとした味わいです。刺激の少ない本格的な台湾のレモンサワーテイスト。オンザロックで飲んで頂きます。',
     INprice: '¥900	( 330ml_Can)',
     OUTprice: '¥770	( 330ml_Can)',
-    soldout: true,
+    soldout: false,
     series: 'others',
   },
   {
