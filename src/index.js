@@ -61,7 +61,7 @@ const beer = [
       'Salud（サルー）!9.99%シリーズ新作はスペインでお馴染みの国民的飲み物サングリアを再現しました！ストレートでも、オンザロックでもお楽しみいただけます。',
     INprice: '¥1,200	( 500ml_Can)',
     OUTprice: '¥1,020	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: '9.99',
   },
   {
