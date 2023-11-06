@@ -157,8 +157,8 @@ const beer = [
       'ヘッドブリューワーのウィニーと台南のTCRCとのコラボレーション最新作。台湾やアジア他の地域でスイーツやドリンクのトッピングとしてもお馴染みの仙草ゼリーのビールです。淹れたてのミントティーの香りと滑らかな味わいが乾いた喉を癒します。',
     INprice: '¥1,300	( 500ml_Can)',
     OUTprice: '¥1,100	( 500ml_Can)',
-    soldout: false,
-    series: ['taiwan', 'recommend'],
+    soldout: true,
+    series: ['taiwan'],
   },
   {
     TWname: '臺虎 檬檬冬冬',
