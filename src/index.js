@@ -17,6 +17,19 @@ const beer = [
     series: ['recommend', 'others'],
   },
   {
+    TWname: '臺虎生啤酒〈嗨〉<br />多元同行限定版',
+    JPname:
+      'タイフードラフトハイ ダイバーシティ・リミテッドエディション | Taihu Draft High',
+    img: 'assets/img/Taihu Draft High - LGPT.png',
+    sort: 'Taiwanese Lager | 5.00%',
+    intro:
+      'さわやかで、すっきりとした麦芽のうま味と、ほのかにホップの香りを感じることが出来るビールです。タイフーは2017年から、ビールを通じてジェンダー平等を支援してきました。「タイフードラフトハイ ダイバーシティ・リミテッドエディション」をリリース。七色に輝く限定缶は、あらゆる色への包容性とLGBTQ+の多様性に対する支持を表しています！',
+    INprice: '¥900	( 500ml_Can)',
+    OUTprice: '¥800	( 500ml_Can)	',
+    soldout: false,
+    series: ['recommend', 'others'],
+  },
+  {
     TWname: '臺虎 精釀IPA',
     JPname: 'タイフー IPA | Taihu IPA',
     img: 'assets/img/Taihu IPA.jpeg',
@@ -61,7 +74,7 @@ const beer = [
       'Salud（サルー）!9.99%シリーズ新作はスペインでお馴染みの国民的飲み物サングリアを再現しました！ストレートでも、オンザロックでもお楽しみいただけます。',
     INprice: '¥1,200	( 500ml_Can)',
     OUTprice: '¥1,020	( 500ml_Can)',
-    soldout: true,
+    soldout: false,
     series: '9.99',
   },
   {
@@ -148,18 +161,18 @@ const beer = [
     soldout: false,
     series: 'taiwan',
   },
-  {
-    TWname: '臺虎 騷包仙草啤酒',
-    JPname: 'グラスゼリーエール | Taihu Grass Jelly Ale',
-    img: 'assets/img/Taihu Grass Jelly Ale.png',
-    sort: 'Ale | 4.50%',
-    intro:
-      'ヘッドブリューワーのウィニーと台南のTCRCとのコラボレーション最新作。台湾やアジア他の地域でスイーツやドリンクのトッピングとしてもお馴染みの仙草ゼリーのビールです。淹れたてのミントティーの香りと滑らかな味わいが乾いた喉を癒します。',
-    INprice: '¥1,300	( 500ml_Can)',
-    OUTprice: '¥1,100	( 500ml_Can)',
-    soldout: true,
-    series: ['taiwan'],
-  },
+  // {
+  //   TWname: '臺虎 騷包仙草啤酒',
+  //   JPname: 'グラスゼリーエール | Taihu Grass Jelly Ale',
+  //   img: 'assets/img/Taihu Grass Jelly Ale.png',
+  //   sort: 'Ale | 4.50%',
+  //   intro:
+  //     'ヘッドブリューワーのウィニーと台南のTCRCとのコラボレーション最新作。台湾やアジア他の地域でスイーツやドリンクのトッピングとしてもお馴染みの仙草ゼリーのビールです。淹れたてのミントティーの香りと滑らかな味わいが乾いた喉を癒します。',
+  //   INprice: '¥1,300	( 500ml_Can)',
+  //   OUTprice: '¥1,100	( 500ml_Can)',
+  //   soldout: false,
+  //   series: 'taiwan',
+  // },
   {
     TWname: '臺虎 檬檬冬冬',
     JPname: 'ウィンターメロンレモンエール | Taihu Winter Melon Lemon Ale',
@@ -184,18 +197,30 @@ const beer = [
     soldout: false,
     series: 'taiwan',
   },
-  // {
-  //   TWname: '臺虎 金迷 桂花金萱茶艾爾',
-  //   JPname: '桂花金萱ウーロン茶エール | Taihu Osmanthus Oolong Tea Ale',
-  //   img: 'assets/img/Taihu Osmanthus Oolong Tea Ale.png',
-  //   sort: 'Tea Ale | 5.00%',
-  //   intro:
-  //     'キンモクセイ (桂花)が金萱ウーロン茶と融合し、花の香りの中にさわやかなお茶の風味が広がります。ボディを柔らかくし、幾層もの香りをもたらしてくれます。',
-  //   INprice: '¥1,400	( 500ml_Can)',
-  //   OUTprice: '¥1,190	( 500ml_Can)',
-  //   soldout: true,
-  //   series: 'others',
-  // },
+  {
+    TWname: '臺虎 金迷 桂花金萱茶艾爾',
+    JPname: '桂花金萱ウーロン茶エール | Taihu Osmanthus Oolong Tea Ale',
+    img: 'assets/img/Taihu Osmanthus Oolong Tea Ale.png',
+    sort: 'Tea Ale | 5.00%',
+    intro:
+      'キンモクセイ (桂花)が金萱ウーロン茶と融合し、花の香りの中にさわやかなお茶の風味が広がります。ボディを柔らかくし、幾層もの香りをもたらしてくれます。',
+    INprice: '¥1,400	( 500ml_Can)',
+    OUTprice: '¥1,190	( 500ml_Can)',
+    soldout: false,
+    series: 'others',
+  },
+  {
+    TWname: '臺虎 X CHOYA焙茶梅啤酒',
+    JPname: 'TAIHU X CHOYAほうじ茶梅エール | Taihu X CHOYA Hojicha Plum Ale',
+    img: 'assets/img/Taihu X CHOYA Hojicha Plum Ale.png',
+    sort: 'Fruited Ale | 5.00%',
+    intro:
+      'CHOYAとのコラボレーションビールを再び作りました。国産100％の「紀州南高梅」と静岡ほうじ茶を使用し、全体的なフレーバー レベルを強調し、最後に心地良いティーフレーバーで、淹れたてのようなフレッシュな甘さと香りの上品な甘さを作り出します。',
+    INprice: '¥1,300	( 500ml_Can)',
+    OUTprice: '¥1,100	( 500ml_Can)',
+    soldout: false,
+    series: 'others',
+  },
   {
     TWname: '臺虎 特選檳啤',
     JPname: 'ビンロウ IPA | Taihu Betel Nut IPA',
@@ -205,8 +230,8 @@ const beer = [
       '台湾のチューインガムと言われる「檳榔」は、かつて多くの台湾人が気分を高揚させるために食したB級文化特産品でした。フルーティーなIPAをベースに、爽やかなグアバの香りを加え、檳榔の葉を浸すことで全体の風味を際立たせ、檳榔を噛まなくても台湾気分満点の檳榔ビールに仕上げました。',
     INprice: '¥1,200	( 330ml_Can)',
     OUTprice: '¥1,020	( 330ml_Can)',
-    soldout: true,
-    series: 'others',
+    soldout: false,
+    series: ['recommend', 'others'],
   },
   {
     TWname: '臺虎 臺式檸檬沙瓦',
@@ -279,7 +304,10 @@ function Menu({ selectedSeries }) {
 
           return (
             <div key={index} className={classNames}>
-              <h3 className="beer_twname">{item.TWname}</h3>
+              <h3
+                className="beer_twname"
+                dangerouslySetInnerHTML={{ __html: item.TWname }}
+              ></h3>
               <h4 className="beer_jpname">{item.JPname}</h4>
               <div className="beer_info">
                 <img src={item.img} alt={item.JPname} />
