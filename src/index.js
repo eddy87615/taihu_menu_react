@@ -231,7 +231,7 @@ const beer = [
     INprice: '¥1,200	( 330ml_Can)',
     OUTprice: '¥1,020	( 330ml_Can)',
     soldout: true,
-    series: ['recommend', 'others'],
+    series: ['', 'others'],
   },
   {
     TWname: '臺虎 臺式檸檬沙瓦',
