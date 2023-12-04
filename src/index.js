@@ -74,7 +74,7 @@ const beer = [
       'Salud（サルー）!9.99%シリーズ新作はスペインでお馴染みの国民的飲み物サングリアを再現しました！ストレートでも、オンザロックでもお楽しみいただけます。',
     INprice: '¥1,200	( 500ml_Can)',
     OUTprice: '¥1,020	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: '9.99',
   },
   {
@@ -86,7 +86,7 @@ const beer = [
       '古典的な飲み物であるダイキリにインスパイアされた9.99シリーズ。グラスに冷凍した大きなイチゴを浮かせて注げば、淡いピンク色の魅力的なダイキリお楽しみいただけます。',
     INprice: '¥1,200	( 500ml_Can)',
     OUTprice: '¥1,020	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: '9.99',
   },
   {
@@ -231,7 +231,7 @@ const beer = [
     INprice: '¥1,200	( 330ml_Can)',
     OUTprice: '¥1,020	( 330ml_Can)',
     soldout: false,
-    series: ['', 'others'],
+    series: 'others',
   },
   {
     TWname: '臺虎 臺式檸檬沙瓦',
