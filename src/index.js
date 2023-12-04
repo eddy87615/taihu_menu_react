@@ -146,7 +146,7 @@ const beer = [
       '臺湾ではお馴染みの梅ジュースで純粋に醸造されたグリーンプラムエール。やわらかい青梅の香りにほのかなフルーツエステルの上品な余韻をもたらす。',
     INprice: '¥1,300	( 500ml_Can)',
     OUTprice: '¥1,100	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: 'taiwan',
   },
   {
