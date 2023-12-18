@@ -50,7 +50,7 @@ const beer = [
       '麦芽由来の天然発酵による9.99%の高アルコール系。カクテルの味わいをビールで表現しました。オンザロックスタイルで飲んで頂きます。',
     INprice: '¥1,200	( 500ml_Can)',
     OUTprice: '¥1,020	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: '9.99',
   },
   {
@@ -194,7 +194,7 @@ const beer = [
       '渇きを癒し、暑さを和らげる楊桃(スターフルーツ)ジュースをビールに変えてみました！爽やかなドイツ風サワービールのGoseをベースに、昔ながらの漬け込んだスターフルーツを組み合わせ、甘酸っぱい本格的な台湾の味を醸造しました！',
     INprice: '¥1,300	( 500ml_Can)',
     OUTprice: '¥1,100	( 500ml_Can)',
-    soldout: true,
+    soldout: false,
     series: 'taiwan',
   },
   {
