@@ -50,7 +50,7 @@ const beer = [
       '麦芽由来の天然発酵による9.99%の高アルコール系。カクテルの味わいをビールで表現しました。オンザロックスタイルで飲んで頂きます。',
     INprice: '¥1,200	( 500ml_Can)',
     OUTprice: '¥1,020	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: '9.99',
   },
   {
