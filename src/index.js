@@ -266,7 +266,7 @@ const beer = [
       'レモンの華やかな香りとさわやかさでさっぱりとした味わいです。刺激の少ない本格的な台湾のレモンサワーテイスト。オンザロックで飲んで頂きます。',
     INprice: '¥900	( 330ml_Can)',
     OUTprice: '¥770	( 330ml_Can)',
-    soldout: true,
+    soldout: false,
     series: 'others',
   },
   {
