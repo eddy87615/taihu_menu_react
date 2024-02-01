@@ -26,8 +26,8 @@ const beer = [
       'さわやかで、すっきりとした麦芽のうま味と、ほのかにホップの香りを感じることが出来るビールです。タイフーは2017年から、ビールを通じてジェンダー平等を支援してきました。「タイフードラフトハイ ダイバーシティ・リミテッドエディション」をリリース。七色に輝く限定缶は、あらゆる色への包容性とLGBTQ+の多様性に対する支持を表しています！',
     INprice: '¥900	( 500ml_Can)',
     OUTprice: '¥800	( 500ml_Can)	',
-    soldout: false,
-    series: ['recommend', 'others'],
+    soldout: true,
+    series: ['others'],
   },
   {
     TWname: '臺虎 精釀IPA',
@@ -98,7 +98,7 @@ const beer = [
       '色に染まるこの春に、口でお花見してみませんか？桜の塩漬け及びいちご・ライチ・ザクロで醸造されたドラフトビール。桜香りの漂う甘酸っぱくてフルーティさの満ちる味わい、とても9.99%とは信じられない飲みやすさは、まるで満開してる桜の森に吹く強い春風。氷を入れて一緒に召し上がることをおすすめします。',
     INprice: '¥1,200	( 500ml_Can)',
     OUTprice: '¥1,020	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: '9.99',
   },
   {
@@ -170,7 +170,7 @@ const beer = [
       'ハイビスカス（ロゼール）、台湾でお馴染みの梅、山楂（サンザシ）、コリアンダーシード、どれも台湾ならではの原料でハイビスカスの特徴的な甘酸っぱさを強調し、ほのかにスパイシー感のあるゴーゼ。爽やかで心地よいのど越しに、コク深い一品。',
     INprice: '¥1,300	( 500ml_Can)',
     OUTprice: '¥1,100	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: 'taiwan',
   },
   // {
@@ -290,7 +290,7 @@ const beer = [
       '四季桔と柳丁蜜を使用して醸造されたこのビールは、口に含むと柑橘の軽やかな香りが広がり、甘い蜜の香りがアクセントとなり、柔らかなモルティな後味に、酸味と甘みが交わり、アルコール度数は語呂合わせで縁起のよい「発発発」にちなんだ8.88％に設定されているのも楽しい！このビールで、何事もうまくいく辰年になればと願っています。',
     INprice: '¥1,000	( 330ml_Bottle)',
     OUTprice: '¥850	( 330ml_Bottle)',
-    soldout: true,
+    soldout: false,
     series: 'others',
   },
 ];
@@ -313,6 +313,7 @@ function Header({ selectedSeries, onSeriesChange }) {
         <option value="all">全部</option>
         <option value="others">その他</option>
       </select>
+      <span className="takeout">Takeout 15% off</span>
     </header>
   );
 }
@@ -351,8 +352,7 @@ function Menu({ selectedSeries }) {
               </div>
               <p className="sort">{item.sort}</p>
               <ul className="price">
-                <li>店内：{item.INprice}</li>
-                <li>お持ち帰り：{item.OUTprice}</li>
+                <li>{item.INprice}</li>
               </ul>
             </div>
           );

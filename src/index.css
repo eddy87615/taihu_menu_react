@@ -31,7 +31,7 @@ h4 {
 }
 
 main {
-  margin-top: 55%;
+  margin-top: calc(50% + 100px);
 }
 
 .filter {
@@ -168,4 +168,12 @@ footer {
   top: 30%;
   left: 50%;
   transform: translate(-50%);
+}
+
+.takeout {
+  margin: 4% 0;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
 }
