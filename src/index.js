@@ -194,7 +194,7 @@ const beer = [
       '冬瓜茶とレモンの香りで構成されたクラシックな定番フレーバー！ほのかな酸味のあるライムの風味が程よい泡と溶け合い、冬瓜のハチミツの甘さと脂っぽさを和らげ、クリスピーな酸味を引き出す。',
     INprice: '¥1,300	( 500ml_Can)',
     OUTprice: '¥1,100	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: 'taiwan',
   },
   {
