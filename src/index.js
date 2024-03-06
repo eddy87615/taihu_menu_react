@@ -242,7 +242,7 @@ const beer = [
       '台湾の果物市場の定番を連想させるゴーゼスタイル。台湾の文化で重要な役割を果たすフレーバー要素と伝統的なビアスタイルをブレンドすることでビール作りについて再考する新たなシリーズのビール。',
     INprice: '¥1,300	( 500ml_Can)',
     OUTprice: '¥1,110	( 500ml_Can)',
-    soldout: true,
+    soldout: false,
     series: 'taiwan',
   },
   {
@@ -302,7 +302,7 @@ const beer = [
       'レモンの華やかな香りとさわやかさでさっぱりとした味わいです。刺激の少ない本格的な台湾のレモンサワーテイスト。オンザロックで飲んで頂きます。',
     INprice: '¥900	( 330ml_Can)',
     OUTprice: '¥770	( 330ml_Can)',
-    soldout: false,
+    soldout: true,
     series: 'others',
   },
   {
