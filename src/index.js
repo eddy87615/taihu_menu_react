@@ -242,7 +242,7 @@ const beer = [
       '台湾の果物市場の定番を連想させるゴーゼスタイル。台湾の文化で重要な役割を果たすフレーバー要素と伝統的なビアスタイルをブレンドすることでビール作りについて再考する新たなシリーズのビール。',
     INprice: '¥1,300	( 500ml_Can)',
     OUTprice: '¥1,110	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: 'taiwan',
   },
   {
