@@ -38,7 +38,7 @@ const beer = [
       '様々なホップ（センテニアル、シトラス）の香りや苦みがありながら、トロピカルフルーツ感も感じられる、バランスのいいIPA。',
     INprice: '¥1,400	( 500ml_Can)',
     OUTprice: '¥1,190	( 500ml_Can)',
-    soldout: false,
+    soldout: true,
     series: ['recommend', 'others'],
   },
   // {
