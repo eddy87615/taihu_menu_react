@@ -39,7 +39,7 @@ const beer = [
     INprice: '¥1,400	( 500ml_Can)',
     OUTprice: '¥1,190	( 500ml_Can)',
     soldout: true,
-    series: ['recommend', 'others'],
+    series: ['others'],
   },
   // {
   //   TWname: '臺虎 長島冰啤',
